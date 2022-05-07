@@ -5,6 +5,12 @@ pipeline{
 		stage('Build') {
 			steps {
 				//sh 'node --version'
+				echo "$PATH"
+				echo "Build number - $env.BUILD_NUMBER"
+				echo "Build Id - $BUILD_ID"
+				echo "Job name - $env.JOB_NAME"
+				echo "Build tag - $BUILD_TAG"
+				echo "Build url - $BUILD_URL"
 				echo "Build"
 			}
 		}
